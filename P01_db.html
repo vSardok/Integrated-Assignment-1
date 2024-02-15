@@ -1,0 +1,555 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Title</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+
+        <!-- Icons -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+        <!-- Navbar -->
+        <nav
+            class="navbar navbar-expand-sm navbar-dark bg-dark"
+        >
+            <div class="container">
+                <a class="navbar-brand" href="P01_index.html"><img src="https://www.freepnglogos.com/uploads/download-destiny-logo/destiny-2-icon-22.png" alt="HOME" width="50px" height="50px"></a>
+                <button
+                    class="navbar-toggler d-lg-none"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavId"
+                    aria-controls="collapsibleNavId"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="P01_index.html" aria-current="page"
+                                >Home
+                                <span class="visually-hidden">(current)</span></a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="P01_about_us.html">About Us</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a
+                                class="nav-link dropdown-toggle"
+                                href="#"
+                                id="dropdownId"
+                                data-bs-toggle="dropdown"
+                                aria-haspopup="true"
+                                aria-expanded="false"
+                                >Products</a
+                            >
+                            <div
+                                class="dropdown-menu"
+                                aria-labelledby="dropdownId"
+                            >
+                                <a class="dropdown-item" href="P01_cat_A.html"
+                                    >Category A</a
+                                >
+                                <a class="dropdown-item" href="P01_cat_B.html"
+                                    >Category B</a
+                                >
+                            </div>
+                        </li>
+                        <li>
+                            <form class="d-flex my-2 my-lg-0">
+                                <input
+                                    class="form-control me-sm-2"
+                                    type="text"
+                                    placeholder="Search Products"
+                                />
+                                <button
+                                    class="btn btn-outline-success my-2 my-sm-0"
+                                    type="submit"
+                                >
+                                    Search
+                                </button>
+                            </form>
+                        </li>
+                    </ul>
+                    <span class="navbar-text">
+                        <a class="nav-link active" href="#" aria-current="page" data-bs-toggle="modal" data-bs-target="#LogInModal">
+                            <i class="bi bi-person-fill"></i>Login
+                            <span class="visually-hidden">(current)</span>
+                        </a>
+                    </span>
+                    <span class="navbar-text">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                    <span class="navbar-text">
+                        <a class="nav-link active" href="P01_cart.html" aria-current="page">
+                            <i class="bi bi-cart-fill"></i>
+                            <span class="visually-hidden">(current)</span>
+                        </a>
+                    </span>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Log In Modal -->
+        <div
+            class="modal fade"
+            id="LogInModal"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="modalTitleId"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalTitleId">
+                            Log In
+                        </h5>
+                        <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                        ></button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="">
+                            <label for="email" class="form-label">Email</label>
+                            <div class="input-group mb-3">
+                                <input type="email" class="form-control" id="email" placeholder="Enter your email" required/> 
+                                <span class="input-group-text"><i class="bi bi-person-fill"></i></span>
+                            </div>
+                            <label for="password" class="form-label">Password</label>
+                            <div class="input-group mb-3">
+                                <input type="password" class="form-control" id="password" placeholder="Enter your password" required/>
+                                <span class="input-group-text"><i class="bi bi-key-fill"></i></span>
+                            </div>
+                            <input class="form-check-input" type="checkbox" value="" id="remember" />
+                            <label class="form-check-label" for="remember"> Remember </label>
+                            <div style="text-align: center;">
+                                <button
+                                    type="submit"
+                                    class="btn btn-primary"
+                                >
+                                    Login
+                                </button>
+                                
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="container-fluid">Don't have an account? <a href="" data-bs-toggle="modal" data-bs-target="#RegisterModal"> Sign up here</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Registration Modal -->
+        <div
+            class="modal fade"
+            id="RegisterModal"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="modalTitleId"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalTitleId">
+                            Sign Up
+                        </h5>
+                        <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                        ></button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <input type="text" class="form-control col-6" placeholder="First Name"/> 
+                                    </div>
+                                    <div class="col-6">
+                                        <input type="text" class="form-control col-6" placeholder="Last Name"/> 
+                                    </div>
+                                </div>
+                                <input type="email" class="form-control mt-3" placeholder="Enter your email"/>
+                                <input type="password" class="form-control mt-3" placeholder="Password"/>
+                                <input type="password" class="form-control mt-3" placeholder="Confirm password"/>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button
+                            type="button"
+                            class="btn btn-success"
+                            data-bs-dismiss="modal"
+                        >   <!-- If I need to make the Sign Up useful, I must remove the line above this comment -->
+                            Sign Up
+                        </button>   
+                    </div>
+                </div>
+            </div>
+        </div>
+    </head>
+    <body>
+
+        <div
+            class="table-responsive m-3"
+        >
+        <h1>Orders</h1>
+            <table
+                class="table table-hover"  style="text-align: center;"
+            >
+                <thead class="table-primary">
+                    <tr>
+                        <th>OrderID</th>
+                        <th>CustomerFK</th>
+                        <th>Date</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>11/2/2024</td>
+                        <td>1796.00</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h1>Order-Product</h1>
+            <table
+                class="table table-hover"  style="text-align: center;"
+            >
+                <thead class="table-primary">
+                    <tr>
+                        <th>OrderID</th>
+                        <th>ProductID</th>
+                        <th>Quantity</th>
+                        <th>Subtotal</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>24</td>
+                        <td>1</td>
+                        <td>799.00</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>28</td>
+                        <td>2</td>
+                        <td>398.00</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>29</td>
+                        <td>1</td>
+                        <td>799.00</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h1>Customers</h1>
+            <table
+                class="table table-hover"  style="text-align: center;"
+            >
+                <thead class="table-primary">
+                    <tr>
+                        <th>CustomerID</th>
+                        <th>CustomerName</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Luis Antonio Pelayo Sierra</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h1>Products</h1>
+            <table
+                class="table table-hover"  style="text-align: center;"
+            >
+                <thead class="table-primary">
+                    <tr>
+                        <th>ProductID</th>
+                        <th>ProductName</th>
+                        <th>Type</th>
+                        <th>Available</th>
+                        <th>ReleaseDate</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Destiny 2</td>
+                        <td>Base Game</td>
+                        <td>Yes</td>
+                        <td>06/09/2017</td>
+                        <td>0.00</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Curse Of Osiris</td>
+                        <td>DLC</td>
+                        <td>No</td>
+                        <td>05/12/2017</td>
+                        <td>0.00</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Warmind</td>
+                        <td>DLC</td>
+                        <td>No</td>
+                        <td>08/05/2018</td>
+                        <td>0.00</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Forsaken</td>
+                        <td>DLC</td>
+                        <td>Yes</td>
+                        <td>04/09/2018</td>
+                        <td>325.00</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Black Armory</td>
+                        <td>Season</td>
+                        <td>No</td>
+                        <td>04/12/2018</td>
+                        <td>0.00</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Joker's Wild</td>
+                        <td>Season</td>
+                        <td>No</td>
+                        <td>05/03/2019</td>
+                        <td>0.00</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>Season of Opulence</td>
+                        <td>Season</td>
+                        <td>No</td>
+                        <td>04/06/2019</td>
+                        <td>0.00</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>Shadowkeep</td>
+                        <td>DLC</td>
+                        <td>Yes</td>
+                        <td>01/10/2019</td>
+                        <td>399.00</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>Season of the Undying</td>
+                        <td>Season</td>
+                        <td>No</td>
+                        <td>01/10/2019</td>
+                        <td>0.00</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>Season of Dawn</td>
+                        <td>Season</td>
+                        <td>No</td>
+                        <td>10/12/2019</td>
+                        <td>0.00</td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td>Season of the Worthy</td>
+                        <td>Season</td>
+                        <td>No</td>
+                        <td>10/03/2020</td>
+                        <td>0.00</td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td>Season of Arrivals</td>
+                        <td>Season</td>
+                        <td>No</td>
+                        <td>09/06/2020</td>
+                        <td>0.00</td>
+                    </tr>
+                    <tr>
+                        <td>13</td>
+                        <td>Beyond Light</td>
+                        <td>DLC</td>
+                        <td>Yes</td>
+                        <td>10/11/2020</td>
+                        <td>479.00</td>
+                    </tr>
+                    <tr>
+                        <td>14</td>
+                        <td>Season of the Hunt</td>
+                        <td>Season</td>
+                        <td>No</td>
+                        <td>10/11/2020</td>
+                        <td>0.00</td>
+                    </tr>
+                    <tr>
+                        <td>15</td>
+                        <td>Season of the Chosen</td>
+                        <td>Season</td>
+                        <td>No</td>
+                        <td>09/02/2021</td>
+                        <td>0.00</td>
+                    </tr>
+                    <tr>
+                        <td>16</td>
+                        <td>Season of the Splicer</td>
+                        <td>Season</td>
+                        <td>No</td>
+                        <td>11/05/2021</td>
+                        <td>0.00</td>
+                    </tr>
+                    <tr>
+                        <td>17</td>
+                        <td>Season of the Lost</td>
+                        <td>Season</td>
+                        <td>No</td>
+                        <td>24/08/2021</td>
+                        <td>0.00</td>
+                    </tr>
+                    <tr>
+                        <td>18</td>
+                        <td>30th Anniversary Pack</td>
+                        <td>DLC</td>
+                        <td>Yes</td>
+                        <td>07/12/2021</td>
+                        <td>399.00</td>
+                    </tr>
+                    <tr>
+                        <td>19</td>
+                        <td>The Witch Queen</td>
+                        <td>DLC</td>
+                        <td>Yes</td>
+                        <td>22/02/2022</td>
+                        <td>479.00</td>
+                    </tr>
+                    <tr>
+                        <td>20</td>
+                        <td>Season of the Risen</td>
+                        <td>Season</td>
+                        <td>No</td>
+                        <td>22/02/2022</td>
+                        <td>0.00</td>
+                    </tr>
+                    <tr>
+                        <td>21</td>
+                        <td>Season of the Haunted</td>
+                        <td>Season</td>
+                        <td>No</td>
+                        <td>24/05/2022</td>
+                        <td>0.00</td>
+                    </tr>
+                    <tr>
+                        <td>22</td>
+                        <td>Season of Plunder</td>
+                        <td>Season</td>
+                        <td>No</td>
+                        <td>23/08/2022</td>
+                        <td>0.00</td>
+                    </tr>
+                    <tr>
+                        <td>23</td>
+                        <td>Season of the Seraph</td>
+                        <td>Season</td>
+                        <td>No</td>
+                        <td>6/12/2022</td>
+                        <td>0.00</td>
+                    </tr>
+                    <tr>
+                        <td>24</td>
+                        <td>Lightfall</td>
+                        <td>DLC</td>
+                        <td>Yes</td>
+                        <td>28/02/2022</td>
+                        <td>799.00</td>
+                    </tr>
+                    <tr>
+                        <td>25</td>
+                        <td>Season of Defiance</td>
+                        <td>Season</td>
+                        <td>Yes</td>
+                        <td>28/02/2023</td>
+                        <td>199.00</td>
+                    </tr>
+                    <tr>
+                        <td>26</td>
+                        <td>Season of the Deep</td>
+                        <td>Season</td>
+                        <td>Yes</td>
+                        <td>23/05/2019</td>
+                        <td>199.00</td>
+                    </tr>
+                    <tr>
+                        <td>27</td>
+                        <td>Season of the Witch</td>
+                        <td>Season</td>
+                        <td>Yes</td>
+                        <td>22/08/2023</td>
+                        <td>199.00</td>
+                    </tr>
+                    <tr>
+                        <td>28</td>
+                        <td>Season of the Wish</td>
+                        <td>Season</td>
+                        <td>Yes</td>
+                        <td>28/11/2023</td>
+                        <td>199.00</td>
+                    </tr>
+                    <tr>
+                        <td>29</td>
+                        <td>The Final Shape</td>
+                        <td>DLC</td>
+                        <td>Yes</td>
+                        <td>04/06/2024</td>
+                        <td>799.00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <!-- Bootstrap JavaScript Libraries -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>
